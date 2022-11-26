@@ -1,10 +1,10 @@
-//---------- 51 Devuelve un valor de una función utilizando "Return"
+//-- 51 Devuelve un valor de una función utilizando "Return"
 function timesFive(n) {
     return n * 5;
 }
 console.log(timesFive(3));
  
-//---------- 52 Ámbito global y funciones
+//-- 52 Ámbito global y funciones
 let myGlobal = 10;
 
 function fun1() {
@@ -22,7 +22,7 @@ function fun2() {
   console.log(output);
 }
 
-//---------- 53 Ámbito local y funciones
+//-- 53 Ámbito local y funciones
 function myLocalScope() {
     let myVar;
     console.log('inside myLocalScope', myVar);
@@ -32,7 +32,7 @@ myLocalScope();
 // myVar no está definida afuera de myLocalScope
 console.log('outside myLocalScope', myVar);
 
-//---------- 54 Ámbito global vs. local en funciones
+//-- 54 Ámbito global vs. local en funciones
 const outerWear = "T-Shirt";
 
 function myOutfit() {  
@@ -41,7 +41,7 @@ let outerWear = "sweater"
 }
 
 myOutfit();
-//---------- 55 Comprendiendo el valor indefinido devuelto por una función
+//-- 55 Comprendiendo el valor indefinido devuelto por una función
 let sum = 0;
 
 function addThree() {
@@ -55,7 +55,7 @@ function addFive() {
 addThree();
 addFive();
 
-//---------- 56 Asignación con un valor devuelto
+//-- 56 Asignación con un valor devuelto
 let processed = 0;
 
 function processArg(num) {
@@ -64,7 +64,7 @@ function processArg(num) {
 // Cambia solo el código debajo de esta línea
 processed = processArg(7);
 
-//--------- 57 Permanece en línea
+//-- 57 Permanece en línea
 function nextInLine(arr, item) {
     // Cambia solo el código debajo de esta línea
     arr.push(item);
@@ -79,12 +79,12 @@ console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
 
-//--------- 58 Comprende los valores booleanos
+//-- 58 Comprende los valores booleanos
 function welcomeToBooleans() {
     return true; // Cambia esta línea
 }
 
-//-------- 59 Usa lógica condicional con las sentencias "If"
+//-- 59 Usa lógica condicional con las sentencias "If"
 function trueOrFalse(wasThatTrue) { 
     if (wasThatTrue) {
        return "Yes, that was true";
@@ -92,7 +92,7 @@ function trueOrFalse(wasThatTrue) {
        return "No, that was false";
 }
 
-//--------- 60 Comparación con el operador de igualdad
+//-- 60 Comparación con el operador de igualdad
 function testEqual(val) {
     if (val == 12) { // Cambia esta línea
       return "Equal";
@@ -101,7 +101,7 @@ function testEqual(val) {
 }
 testEqual(10);
 
-//-------- 61 Comparación con el operador de estricta igualdad
+//-- 61 Comparación con el operador de estricta igualdad
 function testStrict(val) {
     if (val === 7) { // Cambia esta línea
       return "Equal";
@@ -110,7 +110,7 @@ function testStrict(val) {
 }
 testStrict(10);
 
-//--------- 62 Practica comparando diferentes valores
+//-- 62 Practica comparando diferentes valores
 function compareEquality(a, b) {
     if (a === b) { // Cambia esta línea
       return "Equal";
@@ -119,7 +119,7 @@ function compareEquality(a, b) {
 }
 compareEquality(10, "10");
 
-//-------- 63 Comparación con el operador de desigualdad
+//-- 63 Comparación con el operador de desigualdad
 function testNotEqual(val) {
     if (val != 99) { // Cambia esta línea
       return "Not Equal";
@@ -128,7 +128,7 @@ function testNotEqual(val) {
 }
 testNotEqual(10);
 
-//--------- 64 Comparación con el operador de estricta desigualdad
+//-- 64 Comparación con el operador de estricta desigualdad
 function testStrictNotEqual(val) {
     if (val !== 17) { // Cambia esta línea
       return "Not Equal";
@@ -137,7 +137,7 @@ function testStrictNotEqual(val) {
 }
 testStrictNotEqual(10); 
 
-//--------- 65 Comparación con el operador "mayor que"
+//-- 65 Comparación con el operador "mayor que"
 function testGreaterThan(val) {
     if (val > 100) {  // Cambia esta línea
       return "Over 100";
@@ -149,7 +149,7 @@ function testGreaterThan(val) {
 }
 testGreaterThan(10);
 
-//-------- 66 Comparación con el operador "mayor o igual que"
+//-- 66 Comparación con el operador "mayor o igual que"
 function testGreaterOrEqual(val) {
     if (val >= 20) {  // Cambia esta línea
       return "20 or Over";
@@ -160,7 +160,7 @@ function testGreaterOrEqual(val) {
     return "Less than 10";
 }
 testGreaterOrEqual(10);
- //--------- 67 Comparación con el operador "menor que"
+ //-- 67 Comparación con el operador "menor que"
  function testLessThan(val) {
     if (val < 25) {  // Cambia esta línea
       return "Under 25";
@@ -172,7 +172,7 @@ testGreaterOrEqual(10);
 }
 testLessThan(10);
 
-//-------- 68 Comparación con el operador "menor o igual que"
+//-- 68 Comparación con el operador "menor o igual que"
 function testLessOrEqual(val) {
     if (val <= 12) {  // Cambia esta línea
       return "Smaller Than or Equal to 12";
@@ -184,7 +184,7 @@ function testLessOrEqual(val) {
 }
 testLessOrEqual(10);
 
-//-------- 69 Comparaciones con el operador lógico "and"
+//-- 69 Comparaciones con el operador lógico "and"
 function testLogicalAnd(val) {
     if (val >= 25 && val <= 50) {
         return "Yes";
@@ -193,7 +193,7 @@ function testLogicalAnd(val) {
 }
 testLogicalAnd(10);
 
-//-------- 70 Comparaciones con el operador lógico "or"
+//-- 70 Comparaciones con el operador lógico "or"
 function testLogicalOr(val) {
     if (val < 10 || val > 20) {
     return "Outside";
@@ -202,7 +202,7 @@ function testLogicalOr(val) {
 }
 testLogicalOr(15);
 
-//--------- 71 Introducción a las sentencias "Else"
+//-- 71 Introducción a las sentencias "Else"
 function testElse(val) {
     let result = "";
     if (val > 5) {
@@ -214,7 +214,7 @@ function testElse(val) {
 }
 testElse(4);
 
-// ------- 72 Introducción a las sentencias "Else If"
+//-- 72 Introducción a las sentencias "Else If"
 function testElseIf(val) {
     if (val > 10) {
       return "Greater than 10";
@@ -226,7 +226,7 @@ function testElseIf(val) {
 }
 testElseIf(7);
 
-//-------- 73 Orden lógico de las sentencias "if else"
+//-- 73 Orden lógico de las sentencias "if else"
 function orderMyLogic(val) {
     if (val < 5) {
       return "Less than 5";
@@ -238,7 +238,7 @@ function orderMyLogic(val) {
 }
 orderMyLogic(7);
 
-//-------- 74 Encadena sentencias if else
+//-- 74 Encadena sentencias if else
 function testSize(num) {
     if (num < 5) {
       return "Tiny";
@@ -256,7 +256,7 @@ function testSize(num) {
 }
 testSize(7);
 
-//-------- 75 Código de golf
+//-- 75 Código de golf
 const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 
 function golfScore(par, strokes) {
@@ -280,7 +280,7 @@ function golfScore(par, strokes) {
 }
 golfScore(5, 4);
 
-//-------- 76 Seleccionando entre muchas opciones con declaración switch
+//-- 76 Seleccionando entre muchas opciones con declaración switch
 function caseInSwitch(val) {
 let answer = "";
     
@@ -302,7 +302,7 @@ switch (val){
 }
 caseInSwitch(1);
 
-//-------- 77 Agrega una opción predeterminada en las declaraciones switch
+//-- 77 Agrega una opción predeterminada en las declaraciones switch
 function switchOfStuff(val) {
 let answer = "";
    
@@ -324,7 +324,7 @@ switch (val) {
 }
 switchOfStuff(1);
 
-//-------- 78 Múltiples opciones idénticas en las declaraciones "switch"
+//-- 78 Múltiples opciones idénticas en las declaraciones "switch"
 function sequentialSizes(val) {
 let answer = "";
 
@@ -348,7 +348,7 @@ switch (val) {
 }
 sequentialSizes(1);
 
-//-------- 79 Reemplazando cadenas de "If Else" por "Switch"
+//-- 79 Reemplazando cadenas de "If Else" por "Switch"
 function chainToSwitch(val) {
 let answer = "";
 switch(val) {
@@ -371,13 +371,13 @@ switch(val) {
 }
 chainToSwitch(7);
 
-//------- 80 Devuelve valores booleanos desde funciones
+//-- 80 Devuelve valores booleanos desde funciones
 function isLess(a, b) {
     return a < b;
 }  
 isLess(10, 15);
 
-//-------81 Patrón de devolución anticipado para funciones
+//-- 81 Patrón de devolución anticipado para funciones
 function abTest(a, b) {
     if (a < 0 || b < 0) {
         return undefined
@@ -385,3 +385,25 @@ function abTest(a, b) {
     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 abTest(2,2);
+
+//-- 82 Conteo de cartas
+let count = 0;
+
+function cc(card) {
+// Cambia solo el código debajo de esta línea
+if (card <=6) {
+  count ++;
+} else if (card <=9) {
+  count = count;
+} else {
+  count--;
+}
+if (count>0) {
+  return count + " Bet";
+} else {
+  return count + " Hold";
+}
+// Cambia solo el código encima de esta línea
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
