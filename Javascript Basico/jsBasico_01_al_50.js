@@ -68,11 +68,11 @@ const quotient = 66 / 33;
 
 //15 Incrementa un número con JavaScript
 let myVar = 87;
-myVar++;
+myVar++;//88
 
 //16 Decrementa un número con JavaScript
 let myVar = 11;
-myVar--;
+myVar--;//10
 
 //17 Crea números decimales con JavaScript
 const myDecimal = 5.7;
@@ -155,7 +155,7 @@ lastNameLength = lastName.length;
 //33 Utiliza la notación de corchetes para encontrar el primer carácter en una cadena
 var firstLetterOfLastName = "";
 var lastName = "Lovelace";
-firstLetterOfLastName = lastName[0]; // Cambia esta línea
+firstLetterOfLastName = lastName[0];// Cambia esta línea
 
 //34 Comprende la inmutabilidad de las cadenas
 var myStr = "Jello World";
@@ -189,11 +189,11 @@ const myArray = [["Bulls", 23], ["White Sox", 45]];
 
 //41 Accede a los datos de un arreglo con índices
 const myArray = [50, 60, 70];
-const myData = myArray[0];
+const myData = myArray[0];//50
 
 //42 Modifica los datos de un arreglo con índices
 const myArray = [18, 64, 99];
-myArray[0] = 45;
+myArray[0] = 45;//[45, 64, 99];
 
 //43 Accede a arreglos multidimensionales con índices
 const myArray = [
@@ -203,24 +203,24 @@ const myArray = [
     [[10, 11, 12], 13, 14],
   ];
   
-  const myData = myArray[2][1];
+  const myData = myArray[2][1];//8
 
 //44 Manipula arreglos con push()
 const myArray = [["John", 23], ["cat", 2]];
-myArray.push(["dog", 3]);
+myArray.push(["dog", 3]);//[["John", 23], ["cat", 2], ["dog", 3]];
 
 //45 Manipula arreglos con pop()
 const myArray = [["John", 23], ["cat", 2]];
-const removedFromMyArray = myArray.pop(1);
+const removedFromMyArray = myArray.pop(1);//['cat', 2];
 
 //46 Manipula arreglos con shift()
 const myArray = [["John", 23], ["dog", 3]];
-const removedFromMyArray = myArray.shift()
+const removedFromMyArray = myArray.shift()//['John', 23];
 
 //47 Manipula arreglos con unshift()
 const myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
-myArray.unshift(["Paul", 35]);
+myArray.unshift(["Paul", 35]);//[['Paul', 35], ['dog', 3]]
 
 //48 Lista de compras
 const myList = [["Beer", 15], ["Pizza", 4], ["Chocolate Bar", 15], ["Chocolate cake", 2], ["Fruts", 10]];
@@ -236,3 +236,4 @@ function functionWithArgs(param1, param2) {
     console.log(param1 + param2);
   }
   functionWithArgs(3, 5);
+  
