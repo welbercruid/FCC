@@ -41,6 +41,7 @@ let outerWear = "sweater"
 }
 
 myOutfit();
+
 //-- 55 Comprendiendo el valor indefinido devuelto por una función
 let sum = 0;
 
