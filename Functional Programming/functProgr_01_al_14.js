@@ -138,4 +138,75 @@ Array.prototype.myMap = function(callback) {
     return newArray;
 };
 
+//-- 09 Usa el método de "filter" para extraer datos de un arreglo
+const watchList = [
+  {
+    "Title": "Interstellar",
+    "Year": "2014",
+    "Rated": "PG-13",
+    "Released": "07 Nov 2014",
+    "Runtime": "169 min",
+    "Genre": "Adventure, Drama, Sci-Fi",
+    "Director": "Christopher Nolan",
+    "Writer": "Jonathan Nolan, Christopher Nolan",
+    "Actors": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
+    "Plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "Language": "English",
+    "Country": "USA, UK",
+    "Awards": "Won 1 Oscar. Another 39 wins & 132 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
+    "Metascore": "74",
+    "imdbRating": "8.6",
+    "imdbVotes": "910,366",
+    "imdbID": "tt0816692",
+    "Type": "movie",
+    "Response": "True"
+  }
+];
+const filteredList = watchList
+    .map(({Title: title, imdbRating: rating}) => ({title, rating}))
+    .filter(({rating}) => rating > 8);
+
+console.log(filteredList);
+
+//-- 10 Implementa el método filter en un prototipo
+Array.prototype.myFilter = function(callback) {
+    const newArray = [];  
+    this.forEach(a => {
+        callback(a) && newArray.push(a);
+    })
+return newArray;
+};
+
+//-- 11 Devolver parte de un arreglo mediante el método slice
+function sliceArray(anim, beginSlice, endSlice) {
+    const newArr = anim.slice(beginSlice, endSlice);
+    return newArr;
+}
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+sliceArray(inputAnim, 1, 3);
+
+//-- 12 Remueve elementos de un arreglo usando slice en lugar de splice
+function nonMutatingSplice(cities) {
+    return cities.slice(0, 3);
+}
+const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+nonMutatingSplice(inputCities);
+
+//-- 13 Combina dos arreglos utilizando el método "concat"
+function nonMutatingConcat(original, attach) {  
+  return original.concat(attach);
+}
+const first = [1, 2, 3];
+const second = [4, 5];
+nonMutatingConcat(first, second);
+
+//-- 14 Agrega elementos al final de un arreglo utilizando concat en lugar de push
+function nonMutatingPush(original, newItem) {
+    return original.concat(newItem);
+}
+const first = [1, 2, 3];
+const second = [4, 5];
+nonMutatingPush(first, second);
+
 //
