@@ -172,10 +172,12 @@ console.log(filteredList);
 //-- 10 Implementa el método filter en un prototipo
 Array.prototype.myFilter = function(callback) {
     const newArray = [];  
-    this.forEach(a => {
-        callback(a) && newArray.push(a);
-    })
-return newArray;
+    for(let i= 0; i < this.length; i++) {
+      if(callback(this[i], i , this) == true) {
+        newArray.push(this[i])
+      }
+    }
+  return newArray;
 };
 
 //-- 11 Devolver parte de un arreglo mediante el método slice
