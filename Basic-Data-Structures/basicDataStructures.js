@@ -251,3 +251,4 @@ function addFriend(userObj, friend) {
     return userObj.data.friends;
 }
 console.log(addFriend(user, 'Pete'));
+//
